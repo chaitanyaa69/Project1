@@ -1,0 +1,245 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@400;1,700;1,900&display=swap');
+
+.image-description-page {
+  color: #333;
+  padding: 20px;
+  background: linear-gradient(135deg, #f3f3f3 25%, #ffffff 75%);
+  display: flex;
+}
+
+.container5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  flex: 3;
+}
+
+.stepper5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+  position: -webkit-sticky;
+  /* For Safari */
+  position: sticky;
+  top: 20px;
+  height: calc(100vh - 40px);
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.step5 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  background: rgba(0, 123, 255, 0.1);
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease, padding 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.step5:hover {
+  background-color: #b47e7e;
+  padding: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.step5.active {
+  background: #009688;
+  color: #ffffff;
+  
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.step5 .step-number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #007bff;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.step5 .step-title {
+  font-size: 1rem;
+  font-weight: 600;
+  /* Make text bolder */
+  color: #333;
+  align-items: center;
+ 
+}
+
+.step5.active .step-number {
+  background: #ffffff;
+  color: #009688;
+}
+
+.step5.active .step-title {
+  color: #ffffff;
+}
+
+.content-item {
+  position: relative;
+  width: calc(100% - 40px);
+  max-width: 800px;
+  margin: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: #fff;
+}
+
+.content-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: url('https://images.pexels.com/photos/106343/pexels-photo-106343.jpeg') no-repeat center center;
+  background-size: cover;
+  
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  transition: opacity 0.4s ease;
+}
+
+.description-container {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  border-radius: 0 0 15px 15px;
+}
+
+.description-container h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #007bff;
+  position: relative;
+  transition: color 0.4s ease;
+}
+
+.description-container h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+}
+
+.points-list {
+  list-style: none;
+  padding: 0;
+}
+
+.point-item {
+  cursor: pointer;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background 0.4s ease, color 0.4s ease, transform 0.4s ease;
+}
+
+.point-item:hover {
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  transform: translateX(10px);
+}
+
+.details {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(0, 123, 255, 0.05);
+  border-radius: 4px;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.details.show {
+  display: block;
+  max-height: 200px;
+  opacity: 1;
+}
+
+/* .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.4s ease, transform 0.4s ease;
+} */
+
+
+/* .btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  background-color: #004085;
+  transform: translateY(0);
+} */
+
+@media (max-width: 768px) {
+  .content-item {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .stepper {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .step {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .step .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .description-container h2 {
+    font-size: 1.5rem;
+  }
+}

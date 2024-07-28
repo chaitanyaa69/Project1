@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* colors.css */
+:root {
+  /* Second set of colors */
+  --dark-blue: #071952;
+  --teal-blue: #088395;
+  --light-teal: #37B7C3;
+  --light-gray: #EBF4F6;
+  --dark-blue-rgb: rgb(7, 25, 82);
+  --teal-blue-rgb: rgb(8, 131, 149);
+  --light-teal-rgb: rgb(55, 183, 195);
+  --light-gray-rgb: rgb(235, 244, 246);
+}
+
+/* Example usage */
+body {
+  background-color: var(--light-gray);
+}
+
+.header {
+  background-color: var(--teal-blue);
+  color: var(--light-gray);
+}
+
+.button {
+  background-color: var(--light-teal);
+  border: 1px solid var(--dark-blue);
+}
+
+.footer {
+  background-color: var(--dark-blue);
+  color: var(--light-gray);
+}

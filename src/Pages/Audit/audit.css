@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.header1 {
+  text-align: center;
+  padding: 50px 20px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.header1 h1 {
+  font-size: 3em;
+  margin: 0;
+  animation: slideIn 1s ease-in-out;
+  color: black;
+}
+.header1 h2 {
+  font-size: 2rem;
+  margin: 0;
+  animation: slideIn 1s ease-in-out;
+  color: black;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.header1 p {
+  font-size: 1.7rem;
+  color: #000000;
+}
+
+.header1::after {
+  content: '';
+  position: relative;
+  width: 100px;
+  height: 4px;
+  background: #fff;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header2 {
+  text-align: center;
+  padding: 50px 20px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+.header2 h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #000000;
+}
+
+.header2 p {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.header2::after {
+  content: '';
+  position: relative;
+  width: 100px;
+  height: 4px;
+  background: #fff;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.plot {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* Adjusted width to 100% */
+  max-width: 1200px; /* Added max-width to prevent stretching on large screens */
+  margin: 20px auto;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.plot:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plot.odd {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.plot.even {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.number {
+  font-size: 36px; /* Reduced font size for better responsiveness */
+  font-weight: bold;
+  margin: 0 20px;
+  color: #ffffff;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(51, 45, 45, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.content {
+  max-width: 80%;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.content img {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.content h2 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.content p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .header1 h1 {
+    font-size: 2.5em;
+  }
+
+  .header1 p {
+    font-size: 1em;
+  }
+
+  .header2 h1 {
+    font-size: 2.5em;
+  }
+
+  .header2 p {
+    font-size: 1em;
+  }
+
+  .plot {
+    flex-direction: column;
+    padding: 20px;
+    width: 100vw; /* Adjusted width for smaller screens */
+    margin: 10px auto; /* Reduced margin */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+
+  .number {
+    font-size: 24px; /* Reduced font size */
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header1 h1 {
+    font-size: 2em;
+  }
+
+  .header1 p {
+    font-size: 0.9em;
+  }
+
+  .header2 h1 {
+    font-size: 2em;
+  }
+
+  .header2 p {
+    font-size: 0.9em;
+  }
+
+  .plot {
+    padding: 10px;
+    width: 100vw; /* Adjusted width to take full width */
+    margin: 5px auto; /* Reduced margin */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+
+  .number {
+    font-size: 20px; /* Reduced font size further */
+    width: 30px;
+    height: 30px;
+  }
+
+  .content h2 {
+    font-size: 16px;
+  }
+
+  .content p {
+    font-size: 12px;
+  }
+}

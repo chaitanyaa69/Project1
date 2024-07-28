@@ -1,0 +1,117 @@
+/* Base styles */
+.logos-page {
+  padding: 3rem 0;
+  background-color: var(--light-green);
+}
+
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.logos-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.logo-item {
+  flex: 1 1 calc(33.333% - 2rem);
+  margin: 1rem;
+  text-align: center;
+  background-color:var(--light-yellow);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden; /* Ensures content doesn't overflow on hover */
+}
+
+.logo-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #b47e7e;
+}
+
+.logo-icon {
+  margin-top: 1.7rem;
+  color:var(--dark-green);
+  /* Primary color */
+}
+
+.logo-icon svg {
+  font-size: 3rem;
+  transition: color 0.3s ease;
+}
+
+.logo-item:hover .logo-icon svg {
+  color:var(--medium-green);
+
+  /* Hover color */
+}
+
+.logo-description {
+  padding: 1.5rem;
+}
+
+.logo-description h3 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.logo-description p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Advanced responsiveness */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo-item {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-item {
+    flex: 1 1 calc(50% - 2rem);
+  }
+  
+  .logo-icon svg {
+    font-size: 2.5rem;
+  }
+  
+  .logo-description {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo-item {
+    flex: 1 1 100%;
+  }
+  
+  .logo-icon svg {
+    font-size: 2rem;
+  }
+  
+  .logo-description {
+    padding: 1rem;
+  }
+}

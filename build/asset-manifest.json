@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.62b38196.css",
+    "main.js": "/static/js/main.027deed8.js",
+    "static/media/supplier.png": "/static/media/supplier.015d84022ddb9bed7eac.png",
+    "static/media/gap.png": "/static/media/gap.0db0fd3ce5c759893f99.png",
+    "static/media/title.jpg": "/static/media/title.a99467f36b64bcc67228.jpg",
+    "static/media/compliance.jpg": "/static/media/compliance.7fa02e7e1be1c501a89b.jpg",
+    "static/media/tracability.jpg": "/static/media/tracability.babd25adb922e07e7d84.jpg",
+    "static/media/procedure.png": "/static/media/procedure.50e42a2baba9202ba167.png",
+    "static/media/improvement.jpg": "/static/media/improvement.6f5884bdd1a85c6e7597.jpg",
+    "static/media/safetyculture.png": "/static/media/safetyculture.e3e9c667da059dbb24ff.png",
+    "static/media/training.jpg": "/static/media/training.88670d124296c7940fca.jpg",
+    "static/media/label.png": "/static/media/label.b34334fc12258cb70596.png",
+    "static/media/risk.png": "/static/media/risk.a94453845e0f3240089f.png",
+    "static/media/supplier.jpg": "/static/media/supplier.fe7344a7d7e91dd8fc50.jpg",
+    "static/media/reg.png": "/static/media/reg.83e303dbad2194953329.png",
+    "static/media/trouble.jpg": "/static/media/trouble.629dfcb9c03f98a5f49b.jpg",
+    "static/media/trace.png": "/static/media/trace.54bbf2ddb9906c2846bb.png",
+    "static/media/risk.jpg": "/static/media/risk.deee4225dbb134f66c6d.jpg",
+    "static/media/audting.jpg": "/static/media/audting.22f01fca6aeed1d90715.jpg",
+    "static/media/HACCCP.jpg": "/static/media/HACCCP.fe81bcf769f6bd32de24.jpg",
+    "static/media/document.jpg": "/static/media/document.1bc5cc3e05b38dc63709.jpg",
+    "static/media/logo.png": "/static/media/logo.0b83b41c1aa1f98dcfc7.png",
+    "index.html": "/index.html",
+    "main.62b38196.css.map": "/static/css/main.62b38196.css.map",
+    "main.027deed8.js.map": "/static/js/main.027deed8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62b38196.css",
+    "static/js/main.027deed8.js"
+  ]
+}
